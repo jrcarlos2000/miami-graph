@@ -1,0 +1,4 @@
+type UserNFT @entity {
+  id: ID! 
+  indexes : [BigInt!] 
+}

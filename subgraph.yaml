@@ -1,0 +1,26 @@
+specVersion: 0.0.2
+description: ACY
+repository: https://github.com/jrcarlos2000/miami-graph
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: Contract
+    network: celo-alfajores
+    source:
+      address: "0xAE6d8367Be8e3E8B1De59Af0b146CCCeE089b6E0"
+      abi: Contract
+      startBlock: 11544341
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - UserNFT
+      abis:
+        - name: Contract
+          file: ./abis/RDEVault.json
+      eventHandlers:
+        - event: mintItemEvent(string,uint256,address,uint256)
+          handler: handleFlashArbitrageResultLogs
+      file: ./src/mapping.ts
