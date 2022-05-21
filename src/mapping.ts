@@ -16,5 +16,6 @@ export function handleMintItem(
     entity = new UserNFT(event.transaction.from.toHex())
     entity.indexes = [event.params._index];
   }
+  entity.indexes = [event.params._index];
   entity.save();
 }

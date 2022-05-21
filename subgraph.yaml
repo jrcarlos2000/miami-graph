@@ -22,5 +22,5 @@ dataSources:
           file: ./abis/RDEVault.json
       eventHandlers:
         - event: mintItemEvent(string,uint256,address,uint256)
-          handler: handleFlashArbitrageResultLogs
+          handler: handleMintItem
       file: ./src/mapping.ts
