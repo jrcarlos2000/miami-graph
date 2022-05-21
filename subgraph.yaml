@@ -8,7 +8,7 @@ dataSources:
     name: Contract
     network: celo-alfajores
     source:
-      address: "0xAE6d8367Be8e3E8B1De59Af0b146CCCeE089b6E0"
+      address: "0x25e4D0dF994698123A3CcC85bAf435Ae821a2F13"
       abi: Contract
       startBlock: 11544341
     mapping:

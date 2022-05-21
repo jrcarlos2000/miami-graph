@@ -1,4 +1,9 @@
 type UserNFT @entity {
   id: ID! 
-  indexes : [BigInt!] 
+  indexes : [BigInt!]!
+}
+
+type doiNFT @entity {
+  id: ID! 
+  indexes : [BigInt!]!
 }
