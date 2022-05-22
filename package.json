@@ -4,9 +4,9 @@
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ xavier-xia-99/miamigraph",
-    "create-local": "graph create --node http://localhost:8020/ xavier-xia-99/miamigraph",
-    "remove-local": "graph remove --node http://localhost:8020/ xavier-xia-99/miamigraph"
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ jrcarlos2000/miamihack",
+    "create-local": "graph create --node http://localhost:8020/ jrcarlos2000/miamihack",
+    "remove-local": "graph remove --node http://localhost:8020/ jrcarlos2000/miamihack"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "0.26.0",

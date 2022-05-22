@@ -24,3 +24,24 @@ dataSources:
         - event: mintItemEvent(string,uint256,address,uint256)
           handler: handleMintItem
       file: ./src/mapping.ts
+  - kind: ethereum/contract
+    name: ProposalContract
+    network: celo-alfajores
+    source:
+      address: "0x61CDB71DCD2B240F2113196d9Fa9bd1E3eF0C0E2"
+      abi: Contract
+      startBlock: 11544341
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      entities:
+        - UserProposal
+        - doiProposal
+      abis:
+        - name: Contract
+          file: ./abis/ProposalVault.json
+      eventHandlers:
+        - event: proposalMade(string,address,uint256,uint256)
+          handler: handleProposalMade
+      file: ./src/mapping.ts
