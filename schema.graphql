@@ -7,3 +7,10 @@ type doiNFT @entity {
   id: ID! 
   indexes : [BigInt!]!
 }
+
+
+# proposals
+# type doiNFT @entity {
+#   id: ID! 
+#   indexes : [BigInt!]!
+# }

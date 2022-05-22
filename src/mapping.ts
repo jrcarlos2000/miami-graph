@@ -27,7 +27,7 @@ export function handleMintItem(
     entity.save();
   }
   //doi
-
+  // adding the index of each NFT to its doi
   let doiEntity = doiNFT.load(event.params._doi);
   if (!doiEntity) {
     doiEntity = new doiNFT(event.params._doi);
@@ -40,8 +40,20 @@ export function handleMintItem(
     doiEntity.indexes = tmp;
     doiEntity.save();
   }
+  // proposals
+  // let proposalEntity = doiNFT.load(event.params._doi);
+  // if (!doiEntity) {
+  //   doiEntity = new doiNFT(event.params._doi);
+  //   doiEntity.indexes = [event.params._index];
+  //   doiEntity.save()
+  // }
+  // else{
+  //   let tmp = doiEntity.indexes;
+  //   tmp.push(event.params._index);
+  //   doiEntity.indexes = tmp;
+  //   doiEntity.save();
+  // }
 }
 
 
-// adding the index of each NFT to its doi
 
